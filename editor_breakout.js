@@ -1,6 +1,5 @@
 jQuery(document).ready(function($) {
 	var $el = $('#post-body-content');
-	var pause_handler = false;
 	var reset_editor_breakout = function() {
 		$el.css({
 			'left' : 'initial',
