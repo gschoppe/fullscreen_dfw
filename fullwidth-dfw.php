@@ -1,6 +1,6 @@
 <?php if(!defined('ABSPATH')) { die(); }
 /**
- * Plugin Name: Full Width Distraction Free Writing
+ * Plugin Name: Full-Width Distraction Free Writing
  * Plugin URI: http://www.gschoppe.com/fullwidth-dfw
  * Description: Sets the editors DFW mode to 100% width.
  * Version: 1.0.0
@@ -10,8 +10,8 @@
  * Text Domain: fullwidth-dfw
  **/
 
-if( !class_exists('FullWidthDFW') ) { // replace ClassName with the name of your class
-	class FullWidthDFW {  // replace ClassName with the name of your class
+if( !class_exists('FullWidthDFW') ) {
+	class FullWidthDFW {
 		private static $_this;
 		private $plugin_dir;
 		private $plugin_dir_url;
@@ -35,5 +35,5 @@ if( !class_exists('FullWidthDFW') ) { // replace ClassName with the name of your
 			wp_enqueue_script( 'editor_breakout', $this->plugin_dir_url . '/editor_breakout.js', array( 'jquery' ), 'v1.0.0' );
 		}
 	}
-	FullWidthDFW::Instance(); // replace ClassName with the name of your class
+	FullWidthDFW::Instance();
 }
